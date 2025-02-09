@@ -113,7 +113,7 @@ class LinkedList:
 
         t = self.head
         i = 0
-        while t.next:
+        while t:
             if data == t.data:
                 print(f"Found node with data = {data} at index {i}.")
                 return i
@@ -166,6 +166,7 @@ class LinkedList:
     insert_at_the_end = append
     delete_at = pop
 
+"""
 linked_list = LinkedList()
 for i in range(10):
     linked_list.append(i)
@@ -184,3 +185,4 @@ print(linked_list.length)
 linked_list.find(10)
 print(linked_list.at(linked_list.find("foxes")))
 print(linked_list.at(-2))
+"""
